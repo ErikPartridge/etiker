@@ -16,6 +16,15 @@ h1 {
   line-height: 1.6;
 }
 
+.imgbox {
+  border-radius: 4%;
+}
+
+.tbox {
+  border-radius: 9%;
+  border: 1px solid lightgrey;
+}
+
 form {
   font-family: "Montserrat", "Helvetica", sans !important;
 }
