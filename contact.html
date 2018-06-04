@@ -28,6 +28,22 @@
     <meta name="description"
           content="Etiker provides ethics auditing and consulting for tech companies across the globe. ">
     <link rel="stylesheet" type="text/css" href="./main.css">
+    <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.etiker.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
 </head>
 <body>
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -60,7 +76,7 @@
             <h1 class="has-text-centered">Contact Us</h1>
             <p style="margin-left: 10%;margin-right: 10%; font-size: 18px; line-height: 1.5;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We're looking forward to hearing from you. We aim to respond to all inquiries within one business day, however, on rare occasions (such as long weekends), that may become two.</p>
         </div>
-        <div class="columns is-mobile">
+        <div class="columns">
             <div class="column">
                 <div class="content">
                     <form name="contact" method="POST" netlify>
@@ -109,7 +125,7 @@
                     <div class="field">
                         <label class="label">Hours</label>
                         <p class="control">
-                            9:30am-5:30pm Eastern, excluding weekends, federal, and provincial holidays.                      
+                            9:30am-5:30pm Eastern, Monday through Friday excluding federal and provincial holidays.                      
                         </p>
                     </div>
                 </div>
