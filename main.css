@@ -8,6 +8,15 @@
   text-decoration-color: #4C7CFF;
 }
 
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
+
 h1 {
   font-family: "Montserrat", "Helvetica", sans;
 }
