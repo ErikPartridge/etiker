@@ -45,7 +45,7 @@
         <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
                 <li class="navbar-item"><a href="about.html">About</a></li>
-                <li class="navbar-item"><a href="case-study.html">Case Study</a></li>
+                <li class="navbar-item"><a href="https://blog.etiker.com">Blog</a></li>
                 <li class="navbar-item"><a href="services.html">Services</a></li>
                 <li class="navbar-item"><a href="pricing.html">Pricing</a></li>
                 <li class="navbar-item is-active"><a href="contact.html">Contact</a></li>
@@ -87,31 +87,33 @@
                           <textarea style="font-family: 'Montserrat', 'Helvetica', sans !important;" class="textarea" placeholder="e.g. Hello!"></textarea>
                         </div>
                         <div class="control">
-                            <button style="font-family: 'Montserrat', 'Helvetica', sans !important;" class="button is-link">Send</button>
+                            <button style="font-family: 'Montserrat', 'Helvetica', sans !important; width:100%;" class="button is-primary">Send</button>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="column">
-                <div class="content">
+                <div class="card" style="background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('./yul.jpg');background-size: cover;">
+                    <div class="card-content">
                     <div class="field">
-                        <label class="label">Call or Text Us</label>
-                        <p class="control has-icons-left">
-                            <p>🇨🇦&nbsp;<a href="tel:16137017709">+1 (613) 701-7709</a></p>
+                        <label class="label has-text-white">Call or Text Us</label>
+                        <p class="control has-icons-left has-text-white">
+                            <p class="has-text-white">🇨🇦&nbsp;<a class="has-text-white" href="tel:16137017709">+1 (613) 701-7709</a></p>
                         </p>
                     </div>
                     <div class="field">
-                        <label class="label">Email Us</label>
-                        <p class="control">
-                            <a href="mailto:hello@etiker.com">hello@etiker.com</a>                       
+                        <label class="label has-text-white">Email Us</label>
+                        <p class="control has-text-white">
+                            <a class="has-text-white" href="mailto:hello@etiker.com">hello@etiker.com</a>                       
                         </p>
                     </div>
                     <div class="field">
-                        <label class="label">Hours</label>
-                        <p class="control">
+                        <label class="label has-text-white">Hours</label>
+                        <p class="control has-text-white">
                             9:30am-5:30pm Eastern, Monday through Friday excluding federal and provincial holidays.                      
                         </p>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -124,4 +126,13 @@
     <p><span>Our commitment to ethics begins with ourselves: we don't sell your data nor give it to Google.</span></p><p><span>For more information, please checkout our <a href="privacy.html">privacy policy</a>.</span></p>
 </footer>
 </body>
+<style>
+.column {
+    display: inline-flex; 
+}
+
+.column > div {
+    width: 100%; // only Edge needed this nonsense
+}
+</style>
 </html>
