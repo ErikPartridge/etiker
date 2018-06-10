@@ -16,7 +16,7 @@
     <meta property="og:title"
           content="Etiker: Ethics Review for Startups and Enterprise">
     <meta property="og:description"
-          content="Etiker ">
+          content="Etiker helps tech companies grapple with the ethical challenges of the modern era.">
     <meta name="twitter:site" content="@etikerco">
     <meta name="twitter:creator" content="@erikinapeartree">
     <meta name="twitter:title"
@@ -38,7 +38,7 @@
                     <a class="navbar-item" href="../">
                         <img src="./logo.png" alt="Logo"> &nbsp;<span style="font-family:'Italianno', cursive;font-size: 48px; color: white;">Etiker</span>
                     </a>
-                    <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span  class="navbar-burger burger" data-target="navbarMenu">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -156,11 +156,30 @@
 </footer>
 </body>
 <script type="text/javascript">
-[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
-  img.setAttribute('src', img.getAttribute('data-src'));
-  img.onload = function() {
-    img.removeAttribute('data-src');
-  };
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
 });
 </script>
 </html>
