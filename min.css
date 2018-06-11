@@ -1588,3 +1588,7 @@
     --columnGap: 2rem;
   }
 }
+
+.mobile-menu-black {
+	background-color: black!important;
+}
